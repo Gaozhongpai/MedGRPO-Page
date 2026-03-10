@@ -370,59 +370,98 @@ body {
 }
 
 /* ---- Results Table ---- */
+.results-table-wrap {
+  overflow-x: auto;
+  margin-top: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
 .results-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   white-space: nowrap;
 }
 
 .results-table th,
 .results-table td {
-  padding: 0.55rem 0.7rem;
+  padding: 0.6rem 0.9rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
 }
 
-.results-table thead th {
-  background: #1e293b;
-  color: white;
+/* Group header row */
+.results-table thead tr:first-child th {
+  background: #0f172a;
+  color: #94a3b8;
+  font-size: 0.72rem;
   font-weight: 600;
-  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-top: 0.9rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1e293b;
 }
 
-.results-table thead tr:first-child th {
-  border-bottom: 1px solid #334155;
+/* Metric name row */
+.results-table thead tr:last-child th {
+  background: #1e293b;
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 0.78rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.7rem;
 }
 
 .results-table .group-header {
-  border-left: 1px solid #334155;
+  border-left: 2px solid #334155;
+}
+
+.results-table .group-header-border {
+  border-left: 2px solid #334155;
 }
 
 .results-table .model-name {
   text-align: left;
   font-size: 0.82rem;
   white-space: nowrap;
-  padding-left: 1rem;
+  padding-left: 1.2rem;
+  min-width: 240px;
+  color: var(--heading);
 }
 
-.results-table tbody tr:hover {
-  background: #f8fafc;
+.results-table tbody tr {
+  transition: background 0.15s;
+}
+
+.results-table tbody tr:hover td {
+  background: #f1f5f9 !important;
+}
+
+.results-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .results-table .section-divider td {
   border-top: 2px solid #cbd5e1;
 }
 
+.results-table .ours-row td.model-name {
+  color: var(--blue);
+}
+
 .results-table .rank1 {
   background: #fee2e2;
-  color: #991b1b;
-  font-weight: 600;
+  color: #b91c1c;
+  font-weight: 700;
 }
 
 .results-table .rank2 {
-  background: #ffedd5;
-  color: #9a3412;
+  background: #fff7ed;
+  color: #c2410c;
+  font-weight: 500;
 }
 
 /* ---- Citation ---- */
