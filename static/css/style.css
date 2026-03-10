@@ -341,6 +341,31 @@ body {
   opacity: 0.6;
 }
 
+/* ---- Qualitative Results ---- */
+.qual-item {
+  margin-bottom: 3.5rem;
+}
+
+.qual-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 0.4rem;
+}
+
+.qual-desc {
+  font-size: 0.95rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.qual-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
 /* ---- Citation ---- */
 .citation-box {
   position: relative;
