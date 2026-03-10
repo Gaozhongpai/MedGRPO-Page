@@ -108,18 +108,18 @@
       </div>
       <div class="method-card">
         <div class="method-icon"><i class="fas fa-graduation-cap"></i></div>
-        <h3>Stage 1: SFT</h3>
-        <p>Supervised fine-tuning of Qwen2.5-VL-7B on MedVidBench establishes a strong baseline that outperforms GPT-4.1 and Gemini-2.5-Flash.</p>
+        <h3>Supervised Fine-Tuning</h3>
+        <p>Fine-tuning Qwen2.5-VL-7B on MedVidBench establishes a strong baseline that outperforms GPT-4.1 and Gemini-2.5-Flash across all tasks.</p>
       </div>
       <div class="method-card">
         <div class="method-icon"><i class="fas fa-balance-scale"></i></div>
-        <h3>Stage 2: MedGRPO</h3>
-        <p>Multi-task reinforcement learning with cross-dataset reward normalization that maps each dataset's median performance to a fixed reward value (0.5), preventing training collapse across heterogeneous datasets.</p>
+        <h3>Reward Normalization</h3>
+        <p>Logistic normalization maps each dataset's median performance to a fixed reward value (0.5), ensuring fair optimization across heterogeneous datasets and preventing training collapse.</p>
       </div>
       <div class="method-card">
         <div class="method-icon"><i class="fas fa-stethoscope"></i></div>
-        <h3>Stage 2: Medical LLM Judge</h3>
-        <p>RL reward signal via GPT-4.1-based comparative evaluation across five clinical dimensions: medical terminology, instrument/anatomy ID, specificity, clinical context, and action accuracy.</p>
+        <h3>Medical LLM Judge</h3>
+        <p>GPT-4.1-based comparative evaluation across five clinical dimensions: medical terminology, instrument/anatomy ID, specificity, clinical context, and action accuracy.</p>
       </div>
     </div>
 
